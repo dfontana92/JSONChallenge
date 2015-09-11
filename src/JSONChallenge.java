@@ -17,7 +17,7 @@ public class JSONChallenge {
 	public static void main(String[] args) throws FileNotFoundException {
 		
 		//Create JSON Reader pointed at target file, then read and parse
-			JsonReader myReader = Json.createReader(new BufferedReader(new FileReader(new File(".\\src\\challenge2.json"))));
+			JsonReader myReader = Json.createReader(new BufferedReader(new FileReader(new File("." + File.separator + "src" + File.separator + "challenge2.json"))));
 			JsonObject input = myReader.readObject();
 		
 		//Diagnostic timer
